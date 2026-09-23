@@ -5,6 +5,18 @@ ipynb파일을 pdf로 변경해서 어디 제출하려고 하니 nbconverter니 
 Jupyter Notebook(`.ipynb`) 파일을 **수식·이미지·한글**까지 그대로 살려 PDF로 변환하는 프로그램입니다.
 TeX 설치가 필요 없고, 단일 실행 파일(exe)로 배포할 수 있습니다.
 
+## 다운로드 (설치 불필요)
+
+| OS | 파일 |
+|---|---|
+| Windows 10/11 (64bit) | [ipynb2pdf.exe](https://github.com/so4869/ipynb2pdf/releases/latest/download/ipynb2pdf.exe) |
+| macOS (Apple Silicon) | [ipynb2pdf-macos-arm64.zip](https://github.com/so4869/ipynb2pdf/releases/latest/download/ipynb2pdf-macos-arm64.zip) |
+
+전체 목록: [Releases](https://github.com/so4869/ipynb2pdf/releases)
+
+- Windows: 내려받은 exe에 `.ipynb` 파일을 드래그&드롭하거나 더블클릭해서 파일을 고르면 됩니다. SmartScreen 경고가 뜨면 "추가 정보 → 실행"을 누르세요(서명되지 않은 실행 파일이라 나오는 경고입니다).
+- macOS: 압축을 풀고 터미널에서 `xattr -d com.apple.quarantine ./ipynb2pdf` 를 한 번 실행한 뒤 `./ipynb2pdf 노트북.ipynb` 로 사용합니다.
+
 ## 특징
 
 | 항목 | 지원 내용 |
