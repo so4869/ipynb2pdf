@@ -1,0 +1,9 @@
+.venv/
+build/
+dist/
+out/
+__pycache__/
+*.pyc
+tests/*.pdf
+tests/*.html
+.DS_Store

@@ -1,0 +1,8 @@
+nbformat>=5.7
+reportlab>=4.0
+matplotlib>=3.7
+numpy
+mistune>=3.0
+pygments>=2.15
+pillow>=9.0
+svglib>=1.5

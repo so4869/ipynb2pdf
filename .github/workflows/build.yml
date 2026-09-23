@@ -1,0 +1,20 @@
+name: build
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  windows-exe:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt pyinstaller
+      - run: python tools/make_fontlist.py
+      - run: pyinstaller --clean --noconfirm ipynb2pdf.spec
+      - run: dist\ipynb2pdf.exe tests\sample.ipynb --engine native --no-gui --outdir out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ipynb2pdf-windows
+          path: dist/ipynb2pdf.exe
