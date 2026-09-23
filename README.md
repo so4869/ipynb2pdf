@@ -1,5 +1,7 @@
 # ipynb2pdf
 
+ipynb파일을 pdf로 변경해서 어디 제출하려고 하니 nbconverter니 miktax니 nbconverter[webpdf], library 충돌 등 나를 너무 귀찮게 해서 그냥 claude code랑 같이 ipynb2pdf하나 만들었음
+
 Jupyter Notebook(`.ipynb`) 파일을 **수식·이미지·한글**까지 그대로 살려 PDF로 변환하는 프로그램입니다.
 TeX 설치가 필요 없고, 단일 실행 파일(exe)로 배포할 수 있습니다.
 
